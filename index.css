@@ -1,0 +1,392 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-Regular.ttf) format("truetype");
+}
+body {
+  font-family: "Inter";
+  color: white;
+}
+body > section {
+  width: 100vw;
+  max-width: 100%;
+}
+body .hero {
+  background-image: linear-gradient(148deg, #0061f9 0%, #0061f9a1 60%, #ffffff00 100%), url("images/hero_img.png");
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: none;
+  position: relative;
+  padding: 1rem 2rem;
+}
+body .hero header .title .logo img {
+  height: 1rem;
+}
+body .hero header nav .links li {
+  list-style: none;
+  padding-left: 2rem;
+}
+body .hero header nav .links li a {
+  text-decoration: none;
+  color: inherit;
+}
+body .hero header nav button {
+  background-color: #ffce31;
+  border-radius: 0.25rem;
+  border: none;
+}
+body .hero .hero-text .heading {
+  font-size: 3rem;
+}
+body .hero .hero-text .buttons button {
+  border: none;
+  border-radius: 0.25rem;
+}
+body .hero .hero-text .buttons button.sell-btn {
+  background-color: #ffce31;
+}
+body .hero .hero-text .buttons button.listings-btn {
+  background-color: white;
+}
+body .featured-listings {
+  color: #021850;
+}
+body .featured-listings .heading .title {
+  font-size: 1.75rem;
+}
+body .active-listings {
+  color: #021850;
+}
+body .active-listings .heading .title {
+  font-size: 1.75rem;
+}
+body .active-listings .listings-wrapper {
+  background-color: #1849c6;
+}
+body .active-listings .filter-container {
+  background-color: white !important;
+  box-shadow: #0000001c 1px -3px 11px 8px;
+  border-radius: 0.5rem;
+  transform: translateY(50%);
+  width: max-content;
+}
+body .active-listings .filter-container input,
+body .active-listings .filter-container button {
+  max-width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid gray;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 0.2rem;
+}
+body .active-listings .filter-container input.location,
+body .active-listings .filter-container button.location {
+  background-image: url("images/location.svg");
+}
+body .active-listings .filter-container input.units,
+body .active-listings .filter-container button.units {
+  background-image: url("images/units.svg");
+}
+body .active-listings .filter-container input.occupancy,
+body .active-listings .filter-container button.occupancy {
+  background-image: url("images/occupancy.svg");
+}
+body .active-listings .filter-container input.size,
+body .active-listings .filter-container button.size {
+  background-image: url("images/size.svg");
+}
+body .active-listings .filter-container .search-btn {
+  color: #021850;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #ffce31;
+}
+body .active-listings .filter-container .search-btn img {
+  height: 0.8rem;
+}
+body .active-listings .filter-container .grid > div:not(:first-child) {
+  margin-left: 2rem;
+}
+body .active-listings .view-more-btn {
+  color: #021850;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #ffce31;
+}
+body .hero-container > section {
+  height: 80vh;
+}
+body .hero-container .hero-1 {
+  color: #021850;
+  border-radius: 0 0 12rem 0;
+  background: #e8efff;
+}
+body .hero-container .hero-1 img {
+  border-radius: inherit;
+  object-fit: contain;
+}
+body .hero-container .hero-1 img.man {
+  height: 75vh;
+}
+body .hero-container .hero-1 img.box {
+  height: 50vh;
+}
+body .hero-container .hero-1 .sell-btn {
+  color: #021850;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #1849c6;
+  color: #f6f8fd;
+}
+body .hero-container .hero-2 {
+  color: #021850;
+  border-radius: 0 0 12rem 0;
+}
+body .hero-container .hero-2 img {
+  border-radius: inherit;
+  object-fit: contain;
+}
+body .hero-container .hero-2 img.woman {
+  height: 75vh;
+}
+body .hero-container .hero-2 .sell-btn {
+  color: #021850;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #1849c6;
+  color: #f6f8fd;
+}
+body .hero-container .hero-3 {
+  color: #f6f8fd;
+  border-radius: 12rem 0 0 0;
+  transform: translateY(-5rem);
+  margin-bottom: -5rem;
+  background: #1849c6;
+  height: 100vh;
+}
+body .hero-container .hero-3 img {
+  border-radius: inherit;
+  object-fit: contain;
+}
+body .hero-container .hero-3 img.man {
+  height: 75vh;
+}
+body .hero-container .hero-3 img.box {
+  height: 50vh;
+}
+body .hero-container .hero-3 .article {
+  color: #021850;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+body .hero-container .hero-3 .article img {
+  object-fit: cover;
+}
+body .hero-container .hero-3 .article .info {
+  padding-top: 1rem;
+  font-size: 0.6rem;
+  letter-spacing: 0;
+}
+body .hero-container .hero-3 .article .info img {
+  width: 0.8rem;
+}
+body .hero-container .hero-3 .article .info span {
+  display: flex;
+  align-items: center;
+  padding-left: 0.3rem;
+}
+body .hero-container .hero-3 .article .info span span {
+  padding-left: 0.2rem;
+}
+body .hero-container .hero-3 .article .read-more-btn {
+  color: #021850;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #1849c6;
+  color: #f6f8fd;
+}
+body .hero-container .hero-3 .learning-btn {
+  color: #021850;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #ffce31;
+}
+body .queries {
+  color: #021850;
+  background: #e8efff;
+}
+body .queries .query-card {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: #0000001c 1px -3px 11px 8px;
+}
+body .queries .query-card .write-btn {
+  color: #f6f8fd;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #1849c6;
+}
+body footer {
+  color: #021850;
+}
+body footer input {
+  border-radius: 0.25rem;
+  border: 1px solid gray;
+}
+body footer .subscribe-btn {
+  color: #f6f8fd;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #1849c6;
+}
+body footer img {
+  margin-right: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.listing-container .listing {
+  background-color: #f6f8fd;
+  padding: 1rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+.listing-container .listing img {
+  object-fit: contain;
+}
+.listing-container .listing > span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.listing-container .listing > span.heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.listing-container .listing > span p:first-child {
+  background-image: url(images/location.svg);
+  height: 1rem;
+  width: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.listing-container .listing > span p:first-child.location {
+  background-image: url("images/location.svg");
+}
+.listing-container .listing > span p:first-child.units {
+  background-image: url("images/units.svg");
+}
+.listing-container .listing > span p:first-child.occupancy {
+  background-image: url("images/occupancy.svg");
+}
+.listing-container .listing > span p:first-child.size {
+  background-image: url("images/size.svg");
+}
+.listing-container .listing > span.button-container button {
+  color: #f6f8fd;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #1849c6;
+}
+
+.listing-scroller {
+  padding: 2rem;
+}
+.listing-scroller .scroller {
+  border: thin solid gray;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 1rem;
+}
+.listing-scroller .scroller.active {
+  background-color: #1849c6;
+}

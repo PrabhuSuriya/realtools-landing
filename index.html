@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Connect</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@3.1.2/primeflex.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <section class="hero flex flex-column justify-content-between">
+        <header class="flex justify-content-between">
+            <div class="title flex align-items-center">
+                <span class="logo">
+                    <img src="images/logo.svg" alt="logo" height="">
+                </span>
+                <h3 class="text-2xl pl-2">StorageConnect</h3>
+            </div>
+            <nav class="text-xl flex align-items-center">
+                <ul class="links flex">
+                    <li><a href="#">Active Listing</a></li>
+                    <li><a href="#">Sell Your Self Storage</a></li>
+                    <li><a href="#">Free Evaluation</a></li>
+                    <li><a href="#">Learn</a></li>
+                </ul>
+                <button class="contact ml-4 p-1 px-3">Contact</button>
+            </nav>
+        </header>
+
+        <div class="hero-text flex flex-column align-items-center justify-content-center pb-4">
+            <div class="heading text-center line-height-1">
+                <h2>Self Storage Business</h2>
+                <h2>Buy.Sell.Learn.</h2>
+            </div>
+            <div class="description pt-3">
+                Ex minim non ullamco ut est Lorem cillum incididunt minim deserunt.Magna proident excepteur duis occaecat minim et Lorem.
+            </div>
+            <div class="buttons pt-4">
+                <button class="sell-btn ml-4 p-1 px-3 py-2">Sell You Self Storage</button>
+                <button class="listings-btn ml-4 p-1 px-3 py-2">Active Self Storage Listings</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-listings flex flex-column justify-content-center pt-4">
+        <div class="heading text-center">
+            <div class="title">Featured Self Storage</div>
+            <div class="description text-small">
+                <div>Eu aute dolor mollit nisi sit mollit fugiat cillum nulla sit aliqua dolore magna.</div>
+                <div>Proident nisi Lorem dolor elit ex ex laborum occaecat dolor.</div>
+            </div>
+        </div>
+        <div class="listing-container grid grid-nogutter mt-3">
+
+
+            <div class="col flex justify-content-center">
+                <div class="listing">
+                    <img class="pb-3" src="images/listing_1.png" alt="">
+                    <span class="heading">
+                        <p class="location"> </p>
+                        <p>Jersey City, NJ</p>
+                    </span>
+                    <span>
+                        <p class="units"></p>
+                        <p>Total Units: 89</p>
+                    </span>
+                    <span>
+                        <p class="occupancy"></p>
+                        <p>Occupancy: 50%</p>
+                    </span>
+                    <span>
+                        <p class="size"></p>
+                        <p>Size: 40,333 Sq Ft</p>
+                    </span>
+                    <span class="button-container justify-content-center pt-3">
+                        <button class="sell-btn ml-4 p-1 px-3 py-2">
+                            View More Detail
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col flex justify-content-center">
+                <div class="listing">
+                    <img class="pb-3" src="images/listing_2.png" alt="">
+                    <span class="heading">
+                        <p class="location"> </p>
+                        <p>Jersey City, NJ</p>
+                    </span>
+                    <span>
+                        <p class="units"></p>
+                        <p>Total Units: 89</p>
+                    </span>
+                    <span>
+                        <p class="occupancy"></p>
+                        <p>Occupancy: 50%</p>
+                    </span>
+                    <span>
+                        <p class="size"></p>
+                        <p>Size: 40,333 Sq Ft</p>
+                    </span>
+                    <span class="button-container justify-content-center pt-3">
+                        <button class="sell-btn ml-4 p-1 px-3 py-2">
+                            View More Detail
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col flex justify-content-center">
+                <div class="listing">
+                    <img class="pb-3" src="images/listing_3.png" alt="">
+                    <span class="heading">
+                        <p class="location"> </p>
+                        <p>Jersey City, NJ</p>
+                    </span>
+                    <span>
+                        <p class="units"></p>
+                        <p>Total Units: 89</p>
+                    </span>
+                    <span>
+                        <p class="occupancy"></p>
+                        <p>Occupancy: 50%</p>
+                    </span>
+                    <span>
+                        <p class="size"></p>
+                        <p>Size: 40,333 Sq Ft</p>
+                    </span>
+                    <span class="button-container justify-content-center pt-3">
+                        <button class="sell-btn ml-4 p-1 px-3 py-2">
+                            View More Detail
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="listing-scroller flex justify-content-center">
+            <span class="scroller"></span>
+            <span class="scroller active"></span>
+            <span class="scroller"></span>
+            <span class="scroller"></span>
+
+        </div>
+    </section>
+
+    <section class="active-listings flex flex-column justify-content-center pt-4">
+        <div class="heading text-center">
+            <div class="title">Active Listing Self Storages</div>
+            <div class="description text-small">
+                <div>Eu aute dolor mollit nisi sit mollit fugiat cillum nulla sit aliqua dolore magna.</div>
+                <div>Proident nisi Lorem dolor elit ex ex laborum occaecat dolor.</div>
+            </div>
+        </div>
+        <div class="filter-container align-self-center mx-5 my-3 p-2 pb-4">
+
+            <div class="filter grid grid-nogutter justify-content-center align-items-center text-sm">
+                <div class="col-3">Location</div>
+                <div class="col-2">Property</div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="filter grid grid-nogutter justify-content-center align-items-center">
+                <div class="col-3"><input class="pl-4 location" type="text" placeholder="Search location"></div>
+                <div class="col-2"><input class="pl-4 units" type="text" placeholder="Unit Count"></div>
+                <div class="col-2"><input class="pl-4 occupancy" type="text" placeholder="Occupancy"></div>
+                <div class="col-2">
+                    <button class="search-btn ml-4 p-1 px-3 flex align-items-center">
+                        <img class="pr-3" src="images/search.svg" alt="">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="listings-wrapper">
+
+            <div class="listing-container grid grid-nogutter pt-5">
+
+
+                <div class="col flex justify-content-center">
+                    <div class="listing">
+                        <img class="pb-3" src="images/listing_1.png" alt="">
+                        <span class="heading">
+                            <p class="location"> </p>
+                            <p>Jersey City, NJ</p>
+                        </span>
+                        <span>
+                            <p class="units"></p>
+                            <p>Total Units: 89</p>
+                        </span>
+                        <span>
+                            <p class="occupancy"></p>
+                            <p>Occupancy: 50%</p>
+                        </span>
+                        <span>
+                            <p class="size"></p>
+                            <p>Size: 40,333 Sq Ft</p>
+                        </span>
+                        <span class="button-container justify-content-center pt-3">
+                            <button class="sell-btn ml-4 p-1 px-3 py-2">
+                                View More Detail
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col flex justify-content-center">
+                    <div class="listing">
+                        <img class="pb-3" src="images/listing_2.png" alt="">
+                        <span class="heading">
+                            <p class="location"> </p>
+                            <p>Jersey City, NJ</p>
+                        </span>
+                        <span>
+                            <p class="units"></p>
+                            <p>Total Units: 89</p>
+                        </span>
+                        <span>
+                            <p class="occupancy"></p>
+                            <p>Occupancy: 50%</p>
+                        </span>
+                        <span>
+                            <p class="size"></p>
+                            <p>Size: 40,333 Sq Ft</p>
+                        </span>
+                        <span class="button-container justify-content-center pt-3">
+                            <button class="sell-btn ml-4 p-1 px-3 py-2">
+                                View More Detail
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col flex justify-content-center">
+                    <div class="listing">
+                        <img class="pb-3" src="images/listing_3.png" alt="">
+                        <span class="heading">
+                            <p class="location"> </p>
+                            <p>Jersey City, NJ</p>
+                        </span>
+                        <span>
+                            <p class="units"></p>
+                            <p>Total Units: 89</p>
+                        </span>
+                        <span>
+                            <p class="occupancy"></p>
+                            <p>Occupancy: 50%</p>
+                        </span>
+                        <span>
+                            <p class="size"></p>
+                            <p>Size: 40,333 Sq Ft</p>
+                        </span>
+                        <span class="button-container justify-content-center pt-3">
+                            <button class="sell-btn ml-4 p-1 px-3 py-2">
+                                View More Detail
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="listing-container grid grid-nogutter mt-3">
+
+
+                <div class="col flex justify-content-center">
+                    <div class="listing">
+                        <img class="pb-3" src="images/listing_1.png" alt="">
+                        <span class="heading">
+                            <p class="location"> </p>
+                            <p>Jersey City, NJ</p>
+                        </span>
+                        <span>
+                            <p class="units"></p>
+                            <p>Total Units: 89</p>
+                        </span>
+                        <span>
+                            <p class="occupancy"></p>
+                            <p>Occupancy: 50%</p>
+                        </span>
+                        <span>
+                            <p class="size"></p>
+                            <p>Size: 40,333 Sq Ft</p>
+                        </span>
+                        <span class="button-container justify-content-center pt-3">
+                            <button class="sell-btn ml-4 p-1 px-3 py-2">
+                                View More Detail
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col flex justify-content-center">
+                    <div class="listing">
+                        <img class="pb-3" src="images/listing_2.png" alt="">
+                        <span class="heading">
+                            <p class="location"> </p>
+                            <p>Jersey City, NJ</p>
+                        </span>
+                        <span>
+                            <p class="units"></p>
+                            <p>Total Units: 89</p>
+                        </span>
+                        <span>
+                            <p class="occupancy"></p>
+                            <p>Occupancy: 50%</p>
+                        </span>
+                        <span>
+                            <p class="size"></p>
+                            <p>Size: 40,333 Sq Ft</p>
+                        </span>
+                        <span class="button-container justify-content-center pt-3">
+                            <button class="sell-btn ml-4 p-1 px-3 py-2">
+                                View More Detail
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col flex justify-content-center">
+                    <div class="listing">
+                        <img class="pb-3" src="images/listing_3.png" alt="">
+                        <span class="heading">
+                            <p class="location"> </p>
+                            <p>Jersey City, NJ</p>
+                        </span>
+                        <span>
+                            <p class="units"></p>
+                            <p>Total Units: 89</p>
+                        </span>
+                        <span>
+                            <p class="occupancy"></p>
+                            <p>Occupancy: 50%</p>
+                        </span>
+                        <span>
+                            <p class="size"></p>
+                            <p>Size: 40,333 Sq Ft</p>
+                        </span>
+                        <span class="button-container justify-content-center pt-3">
+                            <button class="sell-btn ml-4 p-1 px-3 py-2">
+                                View More Detail
+                            </button>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="flex justify-content-center py-4">
+                <button class="view-more-btn ml-4 p-1 px-3 flex align-items-center">
+                    View More Listings
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-container">
+        <section class="hero-1 flex align-items-center overflow-hidden">
+            <div class="text flex flex-column flex-1 p-4 justify-content-start">
+                <h3 class="text-3xl pb-3"> Do you have a self storage for Sale? </h3>
+                <div class="pb-3">Sunt ipsum dolore ut aliqua id amet dolore mollit commodo ea eiusmod cupidatat laborum. Quis ex mollit labore occaecat ut id. Consequat labore proident cupidatat cillum Lorem cupidatat exercitation qui esse dolor Lorem incididunt amet.</div>
+                <div class="flex align-content-start">
+                    <button class="sell-btn p-1 px-3 flex align-items-center">
+                                Sell Your Self Storage
+                            </button>
+                </div>
+            </div>
+            <div class="image flex-1 h-full">
+                <div class="relative h-full w-full">
+                    <img class="man absolute bottom-0 right-0" src="images/hero_1_man.png" alt="">
+                    <img class="box absolute bottom-0 right-0" src="images/hero_1_box.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="hero-2 flex align-items-center overflow-hidden">
+            <div class="image flex-1 h-full">
+                <div class="relative h-full w-full">
+                    <img class="woman absolute bottom-0 left-0" src="images/hero_2_woman.png" alt="">
+                </div>
+            </div>
+            <div class="text flex flex-column flex-1 p-4 justify-content-start">
+                <h3 class="text-3xl pb-3"> Do you want to buy a Self Storage? </h3>
+                <div class="pb-3">Sunt ipsum dolore ut aliqua id amet dolore mollit commodo ea eiusmod cupidatat laborum. Quis ex mollit labore occaecat ut id. Consequat labore proident cupidatat cillum Lorem cupidatat exercitation qui esse dolor Lorem incididunt amet.</div>
+                <div class="flex align-content-start">
+                    <button class="sell-btn p-1 px-3 flex align-items-center">
+                                Buy a Self Storage
+                            </button>
+                </div>
+            </div>
+        </section>
+        <section class="hero-3 flex flex-column align-items-center overflow-hidden pb-5">
+            <div class="text flex flex-column flex-1 p-4 align-items-center justify-content-center text-center line-height-1">
+                <h3 class="text-3xl pb-3 px-4 w-8 "> Learn Everything About Buying, Selling, and Operating a Self Storage
+                </h3>
+                <div class="pb-3 text-sm">Learn about literally anything to know about Selling or Buying a Self Storage
+                </div>
+            </div>
+            <div class="learn-articles grid grid-nogutter w-10 pl-8 justify-content-center">
+
+                <div class="col-2 article p-2 bg-white flex flex-column">
+                    <img src="images/learn_1.png" alt="">
+                    <div class="text-small font-bold">Everything you need to know about how to buy a Self Storage</div>
+                    <div class="flex info align-items-center justify-content-between">
+                        <span>
+                                    <img src="images/clock.svg" alt="">
+                                    <span>5Hrs ago</span>
+                        </span>
+                        <span>
+                                    <img src="images/tag.svg" alt="">
+                                    <span>Buy</span>
+                        </span>
+                        <span>
+                                    <img src="images/pp_raza.png" alt="">
+                                    <span>Raza</span>
+                        </span>
+                    </div>
+                    <div class="action flex justify-content-center pt-2">
+                        <button class="read-more-btn p-1 px-4 flex align-items-center">
+                                    Read More
+                                </button>
+                    </div>
+                </div>
+                <div class="col-2 article p-2 bg-white flex flex-column">
+                    <img src="images/learn_2.png" alt="">
+                    <div class="text-small font-bold">Learn Everything about operating a Self Storage</div>
+                    <div class="flex info align-items-center justify-content-between">
+                        <span>
+                                    <img src="images/clock.svg" alt="">
+                                </span>
+                        <span>2Days ago</span>
+                        <span>
+                                    <img src="images/tag.svg" alt="">
+                                </span>
+                        <span>Operate</span>
+                        <span>
+                                    <img src="images/pp_raza.png" alt="">
+                                </span>
+                        <span>Raza</span>
+                    </div>
+                    <div class="action flex justify-content-center pt-2">
+                        <button class="read-more-btn p-1 px-4 flex align-items-center">
+                                    Read More
+                                </button>
+                    </div>
+                </div>
+
+                <div class="col-2 article p-2 bg-white flex flex-column">
+                    <img src="images/learn_3.png" alt="">
+                    <div class="text-small font-bold">Everything you need to know about selling a Self Storage</div>
+                    <div class="flex info align-items-center justify-content-between">
+                        <span>
+                                    <img src="images/clock.svg" alt="">
+                                </span>
+                        <span>2Days ago</span>
+                        <span>
+                                    <img src="images/tag.svg" alt="">
+                                </span>
+                        <span>Operate</span>
+                        <span>
+                                    <img src="images/pp_raza.png" alt="">
+                                </span>
+                        <span>Raza</span>
+                    </div>
+                    <div class="action flex justify-content-center pt-2">
+                        <button class="read-more-btn p-1 px-4 flex align-items-center">
+                                    Read More
+                                </button>
+                    </div>
+                </div>
+
+                <div class="col-2 article p-2 bg-white flex flex-column">
+                    <img src="images/learn_4.png" alt="">
+                    <div class="text-small font-bold">Everything you need to know about how to buy a Self Storage</div>
+                    <div class="flex info align-items-center justify-content-between">
+                        <span>
+                                    <img src="images/clock.svg" alt="">
+                                </span>
+                        <span>2Days ago</span>
+                        <span>
+                                    <img src="images/tag.svg" alt="">
+                                </span>
+                        <span>Operate</span>
+                        <span>
+                                    <img src="images/pp_raza.png" alt="">
+                                </span>
+                        <span>Raza</span>
+                    </div>
+                    <div class="action flex justify-content-center pt-2">
+                        <button class="read-more-btn p-1 px-4 flex align-items-center">
+                                    Read More
+                                </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-content-center py-6">
+                <button class="learning-btn ml-4 p-1 px-3 flex align-items-center">
+                            View More Listings
+                        </button>
+            </div>
+        </section>
+    </section>
+
+    <section class="queries py-8 flex justify-content-center">
+        <div class="query-card w-6 h-10rem flex align-items-center px-4 py-6 bg-white border-1">
+            <div>
+                <h2>Any Queries? Reach Out to Us</h2>
+                <span class="text-xs">Feel free to write to us, we are happy to help you</span>
+            </div>
+            <div class="text-center flex-grow-1">
+                <button class="write-btn p-1 px-3">
+                                Write to Us
+                            </button>
+            </div>
+        </div>
+    </section>
+    <footer class="grid grid-nogutter pt-5 pb-8 px-8">
+        <div class="col-3 flex flex-column">
+            <h3 class="text-xl font-bold">Storage Connect</h3>
+            <span class="text-sm">Nam posuere accumsan porta. Integer id orci sed ante tincidunt tincidunt sit amet sed
+                            libero.</span>
+            <span class="text-xs pt-4"> &copy; Storage Connect 2022, All Rights Reserved </span>
+        </div>
+
+        <div class="col-2 col-offset-1 flex flex-column">
+            <h3 class="text-xl font-bold">Quick Links</h3>
+            <span class="text-sm"> <a href="#">Active Listings</a> </span>
+            <span class="text-sm"> <a href="#">Sell your Self Storage</a> </span>
+            <span class="text-sm"> <a href="#">Free Evaluation</a> </span>
+            <span class="text-sm"> <a href="#">Learn</a> </span>
+        </div>
+
+        <div class="col-2 col-offset-1 flex flex-column">
+            <h3 class="text-xl font-bold">NEWSLETTER</h3>
+            <span>Get latest updates right in your inbox</span>
+            <div>
+                <input class="pl-4 location" type="text" placeholder="Enter your email">
+            </div>
+            <button class="subscribe-btn mt-3 p-1 px-2 w-7 flex align-items-center">
+                            Subscribe Now
+                        </button>
+        </div>
+
+        <div class="col-2 col-offset-1 flex flex-column">
+            <h3 class="text-xl font-bold">LETS GET SOCIAL</h3>
+            <div class="flex">
+                <img src="images/social_facebook.png" alt="">
+                <img src="images/social_linkedin.png" alt="">
+                <img src="images/social_twitter.png" alt="">
+                <img src="images/social_instagram.png" alt="">
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
